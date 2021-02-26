@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="./bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./bootstrap/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
-    <link type="text/css" rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-
-
-</head>
+    </head>
 <body>
 
 <?php

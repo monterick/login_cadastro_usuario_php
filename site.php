@@ -21,7 +21,8 @@ header("location: index.php?msg=facalogin");
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./bootstrap/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
@@ -50,7 +51,7 @@ msg($msg);
            </div>
         <div class="modal-body">
         <h1>Cadastrar Usuário</h1>
-<form action="./controller/controller.php" method="post">
+<form action="./controller/controller.php" method="post" oninput='confirmPass.setCustomValidity(confirmPass.value != senha.value ? "Senhas não conferem." : "")'>
 <div class="form-group">
     <label for="inputAddress">Email</label>
     <input type="email" class="form-control" id="email" name="email" required autofocus>
@@ -97,7 +98,7 @@ msg($msg);
            </div>
         <div class="modal-body">
         <h1>Editar Usuário</h1>
-<form action="./controller/controller.php" method="post">
+<form action="./controller/controller.php" method="post" oninput='confirmPass.setCustomValidity(confirmPass.value != senha.value ? "Senhas não conferem." : "")'>
 <div class="form-group">
     <label for="inputAddress">Email</label>
     <input type="email" class="form-control" id="editemail" name="email" required autofocus>
